@@ -1,0 +1,597 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/AI_Coding_作業一/architecture-portfolio/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/workspace/AI_Coding_作業一/architecture-portfolio/playwright.config.ts",
+    "rootDir": "/workspace/AI_Coding_作業一/architecture-portfolio/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/AI_Coding_作業一/architecture-portfolio/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../驗證資料/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "portfolio.spec.ts",
+      "file": "portfolio.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "匿名瀏覽首頁、六件作品及所有本地圖片",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1224,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:07.151Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-匿名瀏覽首頁、六件作品及所有本地圖片/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-2f71b0b97ccd65e60bbb",
+          "file": "portfolio.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "所有作品分類顯示正確數量",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1200,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:08.978Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-所有作品分類顯示正確數量/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-584c912d33c8f420c414",
+          "file": "portfolio.spec.ts",
+          "line": 20,
+          "column": 5
+        },
+        {
+          "title": "搜尋、空結果與重設",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1185,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:10.785Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-搜尋、空結果與重設/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-4cb1e89b2985badb75aa",
+          "file": "portfolio.spec.ts",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "彈窗內容、鍵盤 Escape 與關閉按鈕",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 265,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:12.576Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-彈窗內容、鍵盤-Escape-與關閉按鈕/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-a40bd9937a62030bbbb0",
+          "file": "portfolio.spec.ts",
+          "line": 39,
+          "column": 5
+        },
+        {
+          "title": "收藏、重新整理保留及取消收藏",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 253,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:13.452Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-收藏、重新整理保留及取消收藏/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-fcce2800c78a571969b7",
+          "file": "portfolio.spec.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "损壞及停用瀏覽器儲存不會阻止瀏覽",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 199,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:14.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-损壞及停用瀏覽器儲存不會阻止瀏覽/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-36fc56ee02bf844944bc",
+          "file": "portfolio.spec.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "手機、平板、桌面無水平溢出且保存截圖",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1160,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:15.093Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-手機、平板、桌面無水平溢出且保存截圖/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-75764e56d818f3d831bf",
+          "file": "portfolio.spec.ts",
+          "line": 73,
+          "column": 5
+        },
+        {
+          "title": "導覽、學習資源連結與彈窗內收藏",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1171,
+                  "error": {
+                    "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50",
+                    "location": {
+                      "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                      "column": 50,
+                      "line": 3
+                    },
+                    "snippet": "  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                        "column": 50,
+                        "line": 3
+                      },
+                      "message": "Error: page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://temporary-brisk-iodine-5xjjt8v.vercel.app/\nCall log:\n\u001b[2m  - navigating to \"https://temporary-brisk-iodine-5xjjt8v.vercel.app/\", waiting until \"load\"\u001b[22m\n\n\n  1 | import { test, expect } from '@playwright/test';\n  2 |\n> 3 | test.beforeEach(async ({ page }) => { await page.goto('/'); });\n    |                                                  ^\n  4 |\n  5 | test('匿名瀏覽首頁、六件作品及所有本地圖片', async ({ page }) => {\n  6 |   const errors: string[] = [];\n    at /workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts:3:50"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T08:25:16.845Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/AI_Coding_作業一/architecture-portfolio/test-results/portfolio-導覽、學習資源連結與彈窗內收藏/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/AI_Coding_作業一/architecture-portfolio/tests/portfolio.spec.ts",
+                    "column": 50,
+                    "line": 3
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "34cb4603fa9a5b79d30c-e27f4b14be6bf396084e",
+          "file": "portfolio.spec.ts",
+          "line": 83,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T08:25:06.799Z",
+    "duration": 11497.196,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

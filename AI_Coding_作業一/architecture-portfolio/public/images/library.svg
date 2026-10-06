@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+ <rect width="960" height="680" fill="#d3d7d0"/>
+ <defs><pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#706b5c" stroke-opacity=".12"/></pattern></defs>
+ <rect width="960" height="680" fill="url(#grid)"/>
+ <g transform="translate(-5,-7)">
+ <path d="M120 460 430 295 835 473 529 633Z" fill="#53564c" opacity=".12"/>
+ <path d="M180 368 480 208 776 340 480 506Z" fill="#f3f0e6" stroke="#635f55" stroke-width="2"/>
+ <path d="M180 368v63l300 145v-70Z" fill="#a9a897" stroke="#635f55" stroke-width="2"/>
+ <path d="M480 506v70l296-170v-66Z" fill="#c5c3b2" stroke="#635f55" stroke-width="2"/>
+ <path d="M215 244 426 135 652 231 445 348Z" fill="#f7f4eb" stroke="#635f55" stroke-width="2"/>
+ <path d="M215 244v104l230 117V348Z" fill="#dfdacb" stroke="#635f55" stroke-width="2"/>
+ <path d="M445 348v117l207-119V231Z" fill="#aead9b" stroke="#635f55" stroke-width="2"/>
+ <path d="M215 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/><path d="M261 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/><path d="M307 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/><path d="M353 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/><path d="M399 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/><path d="M445 244v104l46 22V267Z" fill="none" stroke="#7e7769" stroke-width="1.5"/>
+ <path d="M215 244 426 135 652 231 445 348Z" fill="#c7ba8b" opacity=".25"/><path d="M478 207 536 233 536 313 478 344Z" fill="#696d5b"/>
+ <path d="M566 246 611 265 611 301 566 327Z" fill="#78816d"/>
+ <path d="M510 345v110m33-128v108m33-128v108m33-128v108" stroke="#5b6554" stroke-width="9"/><path d="M660 390 722 356 722 402 660 437Z" fill="#7c806e"/>
+ <path d="M113 448 819 93M130 219l634 296" stroke="#ba492f" stroke-width="1" stroke-dasharray="9 8" opacity=".5"/>
+ <g fill="#6f7860"><ellipse cx="734" cy="451" rx="25" ry="12"/><path d="M734 451v-87" stroke="#596050" stroke-width="4"/><ellipse cx="734" cy="354" rx="27" ry="36" fill="#8d997b"/><ellipse cx="160" cy="320" rx="20" ry="29" fill="#8d997b"/><path d="M160 332v45" stroke="#596050" stroke-width="3"/></g>
+ <path d="M88 593H277M88 587v12M277 587v12" stroke="#5c6057"/>
+ </g><text x="54" y="64" font-family="monospace" font-size="15" fill="#53584d">STUDIO NOTES / STUDY 02</text>
+ <text x="735" y="628" font-family="monospace" font-size="13" fill="#53584d">CONCEPT DIAGRAM</text>
+ </svg>
